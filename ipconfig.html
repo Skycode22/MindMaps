@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.4/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.14.4"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.4/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+      })(() => window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[0,1]},"content":"Troubleshooting Ethernet Connection Issues Workflow","children":[{"type":"list_item","depth":1,"payload":{"lines":[1,2]},"content":"<strong>Check Physical Connections:</strong>","children":[{"type":"list_item","depth":2,"payload":{"lines":[2,3]},"content":"Ensure that the Ethernet cable is firmly plugged into both the computer's Ethernet port and the router or modem."},{"type":"list_item","depth":2,"payload":{"lines":[3,4]},"content":"Try using a different Ethernet cable if available."},{"type":"list_item","depth":2,"payload":{"lines":[4,5]},"content":"Check for any damage to the cable or Ethernet ports."}]},{"type":"list_item","depth":1,"payload":{"lines":[5,6]},"content":"<strong>Restart the Computer:</strong>","children":[{"type":"list_item","depth":2,"payload":{"lines":[6,7]},"content":"Restarting the computer can often resolve connectivity issues."},{"type":"list_item","depth":2,"payload":{"lines":[7,8]},"content":"If possible, shut down the computer and unplug it from the power source for 30 seconds before restarting."}]},{"type":"list_item","depth":1,"payload":{"lines":[8,9]},"content":"<strong>Check Network Settings:</strong>","children":[{"type":"list_item","depth":2,"payload":{"lines":[9,10]},"content":"Open the Network settings on the computer."},{"type":"list_item","depth":2,"payload":{"lines":[10,11]},"content":"Verify that the Ethernet connection is enabled and active."},{"type":"list_item","depth":2,"payload":{"lines":[11,12]},"content":"Check for any IP address conflicts or other network issues."}]},{"type":"list_item","depth":1,"payload":{"lines":[12,13]},"content":"<strong>Update Network Drivers:</strong>","children":[{"type":"list_item","depth":2,"payload":{"lines":[13,14]},"content":"Check the computer manufacturer's website for updated network drivers."},{"type":"list_item","depth":2,"payload":{"lines":[14,15]},"content":"Download and install any available updates."}]},{"type":"list_item","depth":1,"payload":{"lines":[15,16]},"content":"<strong>Test Network Connection:</strong>","children":[{"type":"list_item","depth":2,"payload":{"lines":[16,17]},"content":"Open PowerShell on the computer."},{"type":"list_item","depth":2,"payload":{"lines":[17,18]},"content":"Type &quot;ping 127.0.0.1&quot; and press enter to verify that the network card is functioning."},{"type":"list_item","depth":2,"payload":{"lines":[18,19]},"content":"Type &quot;ping [router IP address]&quot; and press enter to verify connectivity to the router."},{"type":"list_item","depth":2,"payload":{"lines":[19,20]},"content":"Type &quot;ping [external IP address]&quot; and press enter to verify internet connectivity."}]},{"type":"list_item","depth":1,"payload":{"lines":[20,21]},"content":"<strong>Use IPCONFIG Commands in PowerShell:</strong>","children":[{"type":"list_item","depth":2,"payload":{"lines":[21,22]},"content":"Open PowerShell on the computer."},{"type":"list_item","depth":2,"payload":{"lines":[22,23]},"content":"Type &quot;ipconfig /release&quot; and press enter to release the current IP address lease."},{"type":"list_item","depth":2,"payload":{"lines":[23,24]},"content":"Type &quot;ipconfig /renew&quot; and press enter to request a new IP address lease from the DHCP server."},{"type":"list_item","depth":2,"payload":{"lines":[24,25]},"content":"Type &quot;ipconfig /flushdns&quot; and press enter to clear the DNS cache."}]},{"type":"list_item","depth":1,"payload":{"lines":[25,26]},"content":"<strong>Contact Network Administrator:</strong>","children":[{"type":"list_item","depth":2,"payload":{"lines":[26,27]},"content":"If the issue persists, contact the network administrator for further assistance."},{"type":"list_item","depth":2,"payload":{"lines":[27,28]},"content":"Provide details about the troubleshooting steps taken and any error messages received."}]}]},{})</script>
+</body>
+</html>

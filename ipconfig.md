@@ -1,0 +1,28 @@
+# Troubleshooting Ethernet Connection Issues Workflow
+  - **Check Physical Connections:** 
+    - Ensure that the Ethernet cable is firmly plugged into both the computer's Ethernet port and the router or modem.
+    - Try using a different Ethernet cable if available.
+    - Check for any damage to the cable or Ethernet ports.
+  - **Restart the Computer:**
+    - Restarting the computer can often resolve connectivity issues.
+    - If possible, shut down the computer and unplug it from the power source for 30 seconds before restarting.
+  - **Check Network Settings:**
+    - Open the Network settings on the computer.
+    - Verify that the Ethernet connection is enabled and active.
+    - Check for any IP address conflicts or other network issues.
+  - **Update Network Drivers:**
+    - Check the computer manufacturer's website for updated network drivers.
+    - Download and install any available updates.
+  - **Test Network Connection:**
+    - Open a command prompt on the computer.
+    - Type "ping 127.0.0.1" and press enter to verify that the network card is functioning.
+    - Type "ping [router IP address]" and press enter to verify connectivity to the router.
+    - Type "ping [external IP address]" and press enter to verify internet connectivity.
+  - **Use IPCONFIG Commands in PowerShell:**
+    - Open PowerShell on the computer.
+    - Type "ipconfig /release" and press enter to release the current IP address lease.
+    - Type "ipconfig /renew" and press enter to request a new IP address lease from the DHCP server.
+    - Type "ipconfig /flushdns" and press enter to clear the DNS cache.
+  - **Contact Network Administrator:**
+    - If the issue persists, contact the network administrator for further assistance.
+    - Provide details about the troubleshooting steps taken and any error messages received.

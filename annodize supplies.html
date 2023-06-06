@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.4/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.14.4"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.4/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+      })(() => window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[0,1]},"content":"Anodizing Aluminum Keyboard Case Supplies and Materials","children":[{"type":"heading","depth":1,"payload":{"lines":[2,3]},"content":"Safety Equipment","children":[{"type":"list_item","depth":2,"payload":{"lines":[3,4],"index":1},"content":"1. Safety goggles"},{"type":"list_item","depth":2,"payload":{"lines":[4,5],"index":2},"content":"2. Acid-resistant gloves"},{"type":"list_item","depth":2,"payload":{"lines":[5,6],"index":3},"content":"3. An apron or other body protection"},{"type":"list_item","depth":2,"payload":{"lines":[6,7],"index":4},"content":"4. A well-ventilated area or fume extractor"},{"type":"list_item","depth":2,"payload":{"lines":[7,8],"index":5},"content":"5. First aid kit"}]},{"type":"heading","depth":1,"payload":{"lines":[9,10]},"content":"Materials and Chemicals","children":[{"type":"heading","depth":2,"payload":{"lines":[10,11]},"content":"Aluminum Keyboard Case"},{"type":"heading","depth":2,"payload":{"lines":[11,12]},"content":"Cleaning","children":[{"type":"list_item","depth":3,"payload":{"lines":[12,13],"index":1},"content":"1. Distilled water"},{"type":"list_item","depth":3,"payload":{"lines":[13,14],"index":2},"content":"2. Degreasing solution or dish soap"}]},{"type":"heading","depth":2,"payload":{"lines":[14,15]},"content":"Etching","children":[{"type":"list_item","depth":3,"payload":{"lines":[15,16],"index":1},"content":"1. Acidic cleaning solution (Lye)"}]},{"type":"heading","depth":2,"payload":{"lines":[16,17]},"content":"Desmutting","children":[{"type":"list_item","depth":3,"payload":{"lines":[17,18],"index":1},"content":"1. Desmut solution (nitric acid)"}]},{"type":"heading","depth":2,"payload":{"lines":[18,19]},"content":"Anodizing","children":[{"type":"list_item","depth":3,"payload":{"lines":[19,20],"index":1},"content":"1. Anodizing solution (sulfuric acid)"}]},{"type":"heading","depth":2,"payload":{"lines":[20,21]},"content":"Dyeing","children":[{"type":"list_item","depth":3,"payload":{"lines":[21,22],"index":1},"content":"1. Anodizing dye (chosen color)"}]},{"type":"heading","depth":2,"payload":{"lines":[22,23]},"content":"Sealing","children":[{"type":"list_item","depth":3,"payload":{"lines":[23,24],"index":1},"content":"1. Sealing solution (boiling distilled water)"}]}]},{"type":"heading","depth":1,"payload":{"lines":[25,26]},"content":"Equipment and Tools","children":[{"type":"list_item","depth":2,"payload":{"lines":[26,27],"index":1},"content":"1. Plastic or glass containers (acid-resistant)"},{"type":"list_item","depth":2,"payload":{"lines":[27,28],"index":2},"content":"2. Power supply"},{"type":"list_item","depth":2,"payload":{"lines":[28,29],"index":3},"content":"3. Aluminum wire, for mounting"},{"type":"list_item","depth":2,"payload":{"lines":[29,30],"index":4},"content":"4. Thermometer"},{"type":"list_item","depth":2,"payload":{"lines":[30,31],"index":5},"content":"5. pH meter"},{"type":"list_item","depth":2,"payload":{"lines":[31,32],"index":6},"content":"6. Scales"},{"type":"list_item","depth":2,"payload":{"lines":[32,33],"index":7},"content":"7. Long-handled, acid-resistant tongs or pliers"},{"type":"list_item","depth":2,"payload":{"lines":[33,34],"index":8},"content":"8. Cleaning brushes"},{"type":"list_item","depth":2,"payload":{"lines":[34,35],"index":9},"content":"9. Oven"}]}]},{})</script>
+</body>
+</html>
